@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotels Demo</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="social-media">
+            <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#!"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#!"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#!"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#!"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#!"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <div class="right-side">
+            <div class="tele-mail">
+              <i class="fa-solid fa-square-phone"></i>  9200500
+            </div>
+            <div class="tele-mail">
+              <i class="fa-solid fa-envelope"></i>  info@site.com
+            </div>
+            <div class="lang-change">
+             <a href="#!"><i class="fa-solid fa-earth-americas"></i> Arabic </a> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><i class="fa-solid fa-plane-departure"></i> Transit<span>Booking</span> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="#recent">Recent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="#hotels">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="landing">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/bg1.jpg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5><p>Welcome to</p>Transit<span>Booking</span></h5>
+              <p>We are a website specialized in booking hotels throughout the Kingdom of Saudi Arabia, you can book directly by calling the number:
+
+              </p>
+              <h1>9200500</h1>
+            </div>
+          </div>
+
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <a href="#recent" class="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+
+    
+
+    <div class="recent" id="recent">
+      <div class="container">
+        <div class="main-title mb-5 position-relative">
+          <i class="fa-solid fa-hotel"></i>
+          <h2><span>R</span>ecent</h2>
+          <p class="text-black-50 text-uppercase">Latest hotels added</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-xs-12">
+            <div class="hotel-box">
+              <img src="imgs/hotel1.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg><!-- <i class="fa-solid fa-location-dot"></i> Font Awesome fontawesome.com -->Riyadh, Ghirnatah</p>
+                <p><svg class="svg-inline--fa fa-city" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="city" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M480 48c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48V96H224V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V96H112V24c0-13.3-10.7-24-24-24S64 10.7 64 24V96H48C21.5 96 0 117.5 0 144v96V464c0 26.5 21.5 48 48 48H304h32 96H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM240 416H208c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zM128 400c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM560 256c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32zM256 176v32c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM112 160c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32zM256 304c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM112 320H80c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-city"></i> Font Awesome fontawesome.com -->7.1 km from city center</p>
+              </div>
+              <div class="info">
+                <a href="hotel-details.html">Read More</a>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <div class="hotel-box">
+              <img src="imgs/hotel2.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg><!-- <i class="fa-solid fa-location-dot"></i> Font Awesome fontawesome.com -->Riyadh, Ghirnatah</p>
+                <p><svg class="svg-inline--fa fa-city" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="city" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M480 48c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48V96H224V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V96H112V24c0-13.3-10.7-24-24-24S64 10.7 64 24V96H48C21.5 96 0 117.5 0 144v96V464c0 26.5 21.5 48 48 48H304h32 96H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM240 416H208c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zM128 400c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM560 256c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32zM256 176v32c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM112 160c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32zM256 304c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM112 320H80c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-city"></i> Font Awesome fontawesome.com -->7.1 km from city center</p>
+              </div>
+              <div class="info">
+                <a href="hotel-details.html">Read More</a>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <div class="hotel-box">
+              <img src="imgs/hotel3.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg><!-- <i class="fa-solid fa-location-dot"></i> Font Awesome fontawesome.com -->Riyadh, Ghirnatah</p>
+                <p><svg class="svg-inline--fa fa-city" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="city" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M480 48c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48V96H224V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V96H112V24c0-13.3-10.7-24-24-24S64 10.7 64 24V96H48C21.5 96 0 117.5 0 144v96V464c0 26.5 21.5 48 48 48H304h32 96H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM240 416H208c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zM128 400c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM560 256c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32zM256 176v32c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM112 160c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32zM256 304c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM112 320H80c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-city"></i> Font Awesome fontawesome.com -->7.1 km from city center</p>
+              </div>
+              <div class="info">
+                <a href="hotel-details.html">Read More</a>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotels" id="hotels">
+      <div class="container">
+        <div class="main-title mb-5 position-relative">
+          <i class="fa-solid fa-city"></i>
+          <h2><span>H</span>otels</h2>
+          <p class="text-black-50 text-uppercase">All our available hotels</p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul class="switcher sidenav">
+              <li class="active" data-cat=".all"><a href="#!">All</a></li>
+                  <li data-cat=".mecca"><a href="#!">Mecca</a></li>
+                  <li data-cat=".madinah"><a href="#!">Madinah</a></li>
+                  <li data-cat=".riyadh"><a href="#!">Riyadh</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row boxes">
+          <div class="col-lg-6 col-xs-12 animate__animated animate__fadeIn all mecca">
+            <div class="hotel-box">
+              <img src="imgs/hotel1.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p>Set in a modern complex, this posh hotel is next to the upscale Granada Mall.</p>
+                <a href="hotel-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12 animate__animated animate__fadeIn all madinah">
+            <div class="hotel-box">
+              <img src="imgs/hotel2.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p>Set in a modern complex, this posh hotel is next to the upscale Granada Mall.</p>
+                <a href="hotel-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12 animate__animated animate__fadeIn all mecca">
+            <div class="hotel-box">
+              <img src="imgs/hotel3.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p>Set in a modern complex, this posh hotel is next to the upscale Granada Mall.</p>
+                <a href="hotel-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12 animate__animated animate__fadeIn all riyadh">
+            <div class="hotel-box">
+              <img src="imgs/hotel4.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p>Set in a modern complex, this posh hotel is next to the upscale Granada Mall.</p>
+                <a href="hotel-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12 animate__animated animate__fadeIn all mecca">
+            <div class="hotel-box">
+              <img src="imgs/hotel5.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p>Set in a modern complex, this posh hotel is next to the upscale Granada Mall.</p>
+                <a href="hotel-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12 animate__animated animate__fadeIn all riyadh">
+            <div class="hotel-box">
+              <img src="imgs/hotel6.jpg" alt="">
+              <div class="content">
+                <h3>Hilton Riyadh Hotel</h3>
+                <p>Set in a modern complex, this posh hotel is next to the upscale Granada Mall.</p>
+                <a href="hotel-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="main-title mb-5 position-relative">
+          <i class="fa-regular fa-address-card"></i>
+          <h2>About & Contact</h2>
+          <p class="text-black-50 text-uppercase">Get to know us and contact us</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-xs-12">
+            <div class="about-us">
+              <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae hic magnam sit vel libero nisi, consequuntur, ipsum nostrum ab voluptatum perferendis sunt, laboriosam unde tenetur voluptatem velit possimus aperiam esse!</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <div class="contact-us">
+              <h3>contact Us</h3>
+              <p>you can book directly by calling the number :</p>
+              <h1><i class="fa-solid fa-phone"></i>9200500</h1>
+              <p>And you can subscribe for more offers :</p>
+              <form>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; All Copyrights are reseved 2023</p>
+      </div>
+    </footer>
+    <!-- Jquery Lib -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
